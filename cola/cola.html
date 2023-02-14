@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="cola.css">
+</head>
+
+<body>
+  <main class="container">
+    <div class="buttons">
+      <input type="button" value="Crear">
+      <input type="button" value="Adicionar">
+      <input type="button" value="Eliminar">
+    </div>
+    <div class="draw">
+      <div class="text"></div>
+      <div class="shadow">
+        <div class="final">
+        </div>
+        <div class="principio">
+        </div>
+        <div class="cola">
+        </div>
+        <div class="indice">
+        </div>
+      </div>
+    </div>
+    <div class="modalBackground">
+      <form id="formulario" class="modal">
+        <p></p>
+        <input type="number" pattern="\d*" placeholder="Ingrese el valor de la cola">
+        <input type="hidden">
+      </form>
+    </div>
+    <div class="modalBackgroundError">
+      <div class="modalMensaje">
+        <p></p>
+      </div>
+    </div>
+  </main>
+  <script src="cola.js"></script>
+</body>
+
+</html>

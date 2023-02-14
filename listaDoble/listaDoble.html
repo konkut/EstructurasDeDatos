@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="listaDoble.css">
+
+</head>
+
+<body>
+
+  <main class="container">
+    <div class="buttons">
+      <input type="button" value="Adicionar Adelante">
+      <input type="button" value="Adicionar Final">
+      <input type="button" value="Adicionar Antes">
+      <input type="button" value="Adicionar Despues">
+      <input type="button" value="Eliminar Inicio">
+      <input type="button" value="Eliminar Final">
+
+    </div>
+    <div class="draw">
+      <div class="content">
+
+        <div class="shadow"></div>
+        <div class="nodoInicio">
+          <div class="inicio">L</div>
+          <div>null</div>
+        </div>
+      </div>
+
+    </div>
+    <div class="modalBackground">
+      <form action="" class="modal">
+        <p></p>
+        <input type="text" class="form__numero" value="" pattern="[0-9]+" placeholder="Valor">
+        <input type="text" class="form__limites" pattern="\d*" placeholder="Antes de ...">
+        <input type="hidden">
+      </form>
+    </div>
+    <div class="modalBackgroundError">
+      <div class="modalMensaje">
+        <p></p>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="listaDoble.js"></script>
+</body>
+
+</html>

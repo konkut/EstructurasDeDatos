@@ -1,0 +1,193 @@
+/*GENERAL*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  font-size: 62.5%;
+  background-image: url("https://images.ecestaticos.com/tVKvCclKQfYBf9BlcoRzkFmAYAc=/0x0:2121x1414/1200x675/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2Fd9e%2F66d%2F793%2Fd9e66d793adbc994841e60850a17e61c.jpg");
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  width: 100%;
+
+}
+
+.container {
+  min-height: 250px;
+  height: 100%;
+  min-width: 30.0rem;
+  height: 250px;
+  margin: auto;
+  background: #f278;
+
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-evenly;
+  padding: 0.4rem 0;
+
+}
+
+.buttons input {
+  border: none;
+  outline: none;
+  background: #f27f;
+  padding: 2px;
+  font-size: 1.2rem !important;
+  color: #fff;
+  box-shadow: 0 0.5rem 0.5rem rgba(0 0 0 /.7);
+}
+
+.buttons input:hover {
+  background: #f273;
+}
+
+
+/*COLAS*/
+.draw {
+  width: 100%;
+  background-color: transparent;
+}
+
+.text {
+  width: 67%;
+  margin: auto;
+  font-weight: bolder;
+  padding-top: 1.2rem;
+  color: white
+}
+
+.shadow {
+  padding: 1.4rem;
+  background: transparent;
+  width: 100%;
+}
+
+.modalBackground,
+.modalBackgroundError {
+  width: 100%;
+  background: #0007;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: none;
+  opacity: 0.1;
+  margin: auto;
+  animation: aparecer 1s ease-in forwards;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal,
+.modalMensaje {
+  background: #ffb8d3;
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(150 150 150 /.7);
+  padding: 0.6rem;
+  width: fit-content;
+}
+
+.modal p {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: bolder;
+}
+
+.modalMensaje p {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: bolder;
+}
+
+.modalMensaje {
+  padding: 3.0rem 1.2rem;
+}
+
+.modal input {
+  border: none;
+  outline: none;
+  padding: 0.2rem 0.4rem;
+}
+
+
+.modal [type="number"] {
+  display: block;
+  margin: 0.7rem 0;
+  width: 100%;
+}
+
+.modal [value="Crear Cola"],
+[value="Adicionar Cola"],
+[value="Eliminar Cola"] {
+  display: block;
+  width: 100%;
+  background: #a60b47;
+  color: #fff;
+}
+
+.modal [type="submit"]:hover {
+  background: #770430;
+}
+
+
+.principio,
+.final,
+.cola,
+.indice {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 0.1rem;
+  margin: 0.1rem 0;
+}
+
+
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0.2;
+  }
+
+  40% {
+    opacity: 0.4;
+  }
+
+  60% {
+    opacity: 0.6;
+  }
+
+  80% {
+    opacity: 0.8;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 567px) {
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0.6rem 0;
+
+  }
+
+  .buttons input {
+    width: 100%;
+    font-size: 0.8rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0 0 0 /.5);
+    margin: 0 0.1rem;
+  }
+}
